@@ -1,10 +1,23 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
+import Head from "next/head";
 
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`
+import Banner from "../components/Banner";
+import Nav from "../components/Menu/Nav";
+
+
 
 export default function Home() {
-  return <Title>My page</Title>
+  return (
+    <div className="Home">
+      <Head>
+        <title>18 anos de SENAI | Escola SENAI de Informática</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+      </Head>
+
+      <Nav />
+      <Banner />
+
+      
+    </div>
+  )
 }
