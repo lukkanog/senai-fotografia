@@ -18,9 +18,13 @@ export const TextWrapper = styled.div`
 
 const SolidBlock = styled(TextWrapper)`
     background-color: #F0F0F0;
-    padding: 5%;;
+    padding: 5%;
     box-shadow: -5 8 10 #09A6B3;
     transform-style: preserve-3d;
+
+    @media(min-width: 801px){
+        padding: 2.5% 5%;       
+    }
 
 `;
 

@@ -4,6 +4,7 @@ import Head from "next/head";
 import { IntroContainer, AboutContainer } from "../components/Container/";
 import Banner from "../components/Banner";
 import Nav from "../components/Menu/Nav";
+import ButtonLink from "../components/Button";
 
 import { TextWrapper, SolidTextWrapper } from "../components/TextWrapper";
 import {
@@ -37,6 +38,7 @@ export default function Home() {
         <SolidTextWrapper>
           <BlackTitle>O senai</ BlackTitle>
           <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo dapibus est at porttitor. Mauris suscipit convallis elit. Donec tristique convallis arcu sit amet viverra. Nam sit amet massa nunc. Nunc eget ipsum orci. Proin varius interdum ligula, ac blandit dolor accumsan sed. Vestibulum et gravida ante, vitae dignissim turpis.</Paragraph>
+          <ButtonLink href="https://informatica.sp.senai.br/" target="_blank">Veja mais</ButtonLink>
         </SolidTextWrapper>
       </AboutContainer>
 
