@@ -26,14 +26,14 @@ export default function Home() {
       <Nav />
       <Banner />
 
-      <IntroContainer>
+      <IntroContainer id="sobre">
         <TextWrapper>
           <BlueTitle>Mais que uma escola</BlueTitle>
           <BoldParagraph>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</BoldParagraph>
         </TextWrapper>
       </IntroContainer>
 
-      <AboutContainer>
+      <AboutContainer id="senai">
         <SolidTextWrapper>
           <BlackTitle>O senai</ BlackTitle>
           <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo dapibus est at porttitor. Mauris suscipit convallis elit. Donec tristique convallis arcu sit amet viverra. Nam sit amet massa nunc. Nunc eget ipsum orci. Proin varius interdum ligula, ac blandit dolor accumsan sed. Vestibulum et gravida ante, vitae dignissim turpis.</Paragraph>

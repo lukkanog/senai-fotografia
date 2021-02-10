@@ -34,7 +34,10 @@ const BehindElement = styled.div`
         right: 2.5%;
 
         transform: translateZ(-1px);
-        /* z-index: -2; */
+        
+        @media(min-width: 801px){
+            top: 5%;
+        }
 `;
 
 export function SolidTextWrapper(props){

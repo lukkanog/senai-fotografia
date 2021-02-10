@@ -8,7 +8,7 @@ import Section from "./styles";
 
 export function IntroContainer(props) {
     return (
-        <Section bg={bg} mobileBg={mobileBg}>
+        <Section bg={bg} mobileBg={mobileBg} id={props.id}>
             {props.children}
         </Section>
 
@@ -17,7 +17,7 @@ export function IntroContainer(props) {
 
 export function AboutContainer(props) {
     return (
-        <Section bg={pinkBg}>
+        <Section bg={pinkBg} id={props.id}>
             {props.children}
         </Section>
 
