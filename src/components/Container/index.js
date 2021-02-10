@@ -1,20 +1,25 @@
-import styled from "styled-components";
+import bg from "../../assets/img/section-background.jpg"
+import mobileBg from "../../assets/img/mobile-section-background.jpg";
+import pinkBg from "../../assets/img/pink-lettered-background.jpg";
 
-const Container = styled.div`
-    width: 100%;
-    min-height: 490px;
-    background-image: url(${props => props.bg});
-    background-color: #111;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: grid;
-    align-items: center;
 
-    @media(max-width: 800px){
-        min-height: 100vh;
-        background-image: url(${props => ( props.mobileBg? props.mobileBg : props.bg) });
-    }
-`;
+import Section from "./styles";
 
-export default Container;
+
+export function IntroContainer(props) {
+    return (
+        <Section bg={bg} mobileBg={mobileBg}>
+            {props.children}
+        </Section>
+
+    )
+}
+
+export function AboutContainer(props) {
+    return (
+        <Section bg={pinkBg}>
+            {props.children}
+        </Section>
+
+    )
+}
