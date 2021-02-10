@@ -4,9 +4,8 @@ import Head from "next/head";
 import { IntroContainer, AboutContainer } from "../components/Container/";
 import Banner from "../components/Banner";
 import Nav from "../components/Menu/Nav";
-
+import { TextWrapper, SolidTextWrapper } from "../components/TextWrapper";
 import {
-  TextWrapper,
   BlueTitle,
   BlackTitle,
   GalleryTitle,
@@ -29,11 +28,15 @@ export default function Home() {
       <IntroContainer>
         <TextWrapper>
           <BlueTitle>Mais que uma escola</BlueTitle>
-          <BoldParagraph>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consectetur quis officia architecto, aspernatur fuga vero ipsum impedit repellat soluta nihil libero vitae praesentium perferendis facilis esse? Tempore, porro facere!</BoldParagraph>
+          <BoldParagraph>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</BoldParagraph>
         </TextWrapper>
       </IntroContainer>
 
       <AboutContainer>
+        <SolidTextWrapper>
+          <BlackTitle>O senai</ BlackTitle>
+          <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo dapibus est at porttitor. Mauris suscipit convallis elit. Donec tristique convallis arcu sit amet viverra. Nam sit amet massa nunc. Nunc eget ipsum orci. Proin varius interdum ligula, ac blandit dolor accumsan sed. Vestibulum et gravida ante, vitae dignissim turpis.</Paragraph>
+        </SolidTextWrapper>
       </AboutContainer>
 
     </div>

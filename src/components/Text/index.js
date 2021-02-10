@@ -1,18 +1,5 @@
 import styled from "styled-components";
 
-export const TextWrapper = styled.div`
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: left;
-    width: 95%;
-
-    @media(min-width: 801px){
-        width: 700px;
-    }
-`;
-
 const Title = styled.h2`
     font-size: 35px;
     font-weight: lighter;
