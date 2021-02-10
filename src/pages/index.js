@@ -20,7 +20,7 @@ export default function Home() {
       <Nav />
       <Banner />
 
-      <Container bg={bg1} mobileBg={mobileBg}>
+      <Container id="intro" bg={bg1} mobileBg={mobileBg}>
       </Container>
       
       <Container>

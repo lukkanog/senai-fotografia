@@ -46,7 +46,7 @@ function Nav(){
 
             <StyledList active={isActive}>
                 <li className="menu-item">
-                    <StyledLink>item 1</StyledLink>
+                    <StyledLink href="#intro">item 1</StyledLink>
                 </li>
                 <li className="menu-item">
                     <StyledLink>item 2</StyledLink>
