@@ -4,6 +4,7 @@ import Head from "next/head";
 import { IntroContainer, AboutContainer } from "../components/Container/";
 import Banner from "../components/Banner";
 import Nav from "../components/Menu/Nav";
+
 import { TextWrapper, SolidTextWrapper } from "../components/TextWrapper";
 import {
   BlueTitle,
@@ -19,7 +20,7 @@ export default function Home() {
     <div className="Home">
       <Head>
         <title>18 anos de SENAI | Escola SENAI de Informática</title>
-        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="./favicon.ico" type="image/x-icon" />
       </Head>
 
       <Nav />
