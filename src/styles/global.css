@@ -9,3 +9,20 @@
     margin: 0;
     font-family: "Bungee", sans-serif;
 }
+
+/* scroll */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #555;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #ff0098;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #19EFFF;
+  }

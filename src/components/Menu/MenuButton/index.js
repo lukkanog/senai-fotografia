@@ -2,9 +2,14 @@ import styled from "styled-components";
 import Icon from "../../../assets/icons/menu-icon.svg";
 
 const MenuButton = styled.button`
-    position: fixed;
+
+    @media(max-width: 800px){
+        display: hidden;
+    }
+
+    position: absolute;
     top: 78px;
-    left: 5%;
+    left: 5vw;
     height: 36px;
     width: 36px;
 
@@ -30,9 +35,11 @@ const MenuButton = styled.button`
         font-size: 36px;
         color: #FF0075;
         position: absolute;
-        top: -75%;
-        right: -100%;
+        top: -25%;
+        right: -75%;
         display: ${props => props.active ? null : "none"};
+        font-family: "Poppins", sans-serif;
+        font-weight: bolder;
     }
 
 `;

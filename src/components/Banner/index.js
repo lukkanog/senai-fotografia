@@ -8,11 +8,12 @@ const Banner = styled.div`
     background-image: url(${mobileBackgroundImg});
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
-    position: absolute;
-    top: 0;
+    background-position: top right;
+    /* position: absolute;
+    top: 0; */
 
     @media(min-width: 801px){
+        min-height: 140vh;
         background-image: url(${backgroundImg});
     }
 `;
