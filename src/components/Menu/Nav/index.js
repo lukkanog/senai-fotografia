@@ -15,9 +15,9 @@ const StyledList = styled.ul`
     flex-direction: column;
     justify-content: space-around;
     color: #fff;
-    background-image: linear-gradient(90deg, #5f043b 0%, rgba(255,255,255,0) 100%);
-    width: 650px;
-    padding-left: 10vw;
+    background-image: linear-gradient(90deg, #4d0130 0%, rgba(255,255,255,0) 100%);
+    width: 80vw;
+    padding: 10vh 0 10vh 15vw;
     height: inherit;
     z-index: 0;
     transition: .5s;
@@ -26,18 +26,34 @@ const StyledList = styled.ul`
 
 `;
 
+const StyledLink = styled.a`
+    transition: .4s;
+    cursor: pointer;
+
+    &:hover{
+        text-decoration: underline;
+        color: #19EFFF;
+    }
+`;
+
 function Nav(){
 
     const [ isActive, toggleMenu ] = useState(false);
 
     return (
         <StyledNav className="main-nav">
-            <MenuButton onClick={() => {toggleMenu(!isActive)}}/>
+            <MenuButton onClick={() => {toggleMenu(!isActive)}} active={isActive}/>
 
-            <StyledList className="menu-options" active={isActive}>
-                <li className="menu-item">a</li>
-                <li className="menu-item">n</li>
-                <li className="menu-item">c</li>
+            <StyledList active={isActive}>
+                <li className="menu-item">
+                    <StyledLink>item 1</StyledLink>
+                </li>
+                <li className="menu-item">
+                    <StyledLink>item 2</StyledLink>
+                </li>
+                <li className="menu-item">
+                    <StyledLink>item 3</StyledLink>
+                </li>
             </StyledList>
         </StyledNav>
     )

@@ -16,6 +16,7 @@ const MenuButton = styled.button`
 
     background-image: url(${Icon});
     background-size: cover;
+
     transform: scaleX(-1);
     transition: .4s;
 
@@ -23,6 +24,17 @@ const MenuButton = styled.button`
         cursor: pointer;
         transform: scaleX(-1) scale(0.8);
     }
+
+    &::before{
+        content: ">";
+        font-size: 36px;
+        color: #FF0075;
+        position: absolute;
+        top: -75%;
+        right: -100%;
+        display: ${props => props.active ? null : "none"};
+    }
+
 `;
 
 
