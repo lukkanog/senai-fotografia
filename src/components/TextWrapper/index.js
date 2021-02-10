@@ -19,7 +19,7 @@ export const TextWrapper = styled.div`
 const SolidBlock = styled(TextWrapper)`
     background-color: #F0F0F0;
     padding: 5%;
-    box-shadow: -5 8 10 #09A6B3;
+    box-shadow: -5px 8px 10px #09A6B3;
     transform-style: preserve-3d;
 
     @media(min-width: 801px){
@@ -36,6 +36,7 @@ const BehindElement = styled.div`
         position: absolute;
         top: 2.5%;
         right: 2.5%;
+
 
         transform: translateZ(-1px);
         

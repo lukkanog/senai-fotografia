@@ -9,6 +9,14 @@ const ButtonLink = styled.a`
     margin-top: 1em;
     text-align: center;
     align-self: center;
+    transition: .25s;
+
+    &:hover{
+        background-color: #19eeff;
+        color: #000;
+        box-shadow: -5px 8px 10px #00000050;
+        transform: translate(2px, -2px);
+    }
 
     @media(min-width: 801px){
         align-self: flex-end;
