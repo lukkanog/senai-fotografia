@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import React, { useState, useEffect} from "react";
 import MenuButton from "../MenuButton";
+import { Link } from "react-scroll";
 
 const StyledNav = styled.nav`
     position: fixed;
@@ -26,9 +27,10 @@ const StyledList = styled.ul`
 
 `;
 
-const StyledLink = styled.a`
+const StyledLink = styled.p`
     transition: .4s;
     cursor: pointer;
+    padding: 1em;
 
     &:hover{
         text-decoration: underline;
@@ -41,18 +43,24 @@ function Nav(){
     const [ isActive, toggleMenu ] = useState(false);
 
     return (
-        <StyledNav className="main-nav">
-            <MenuButton onClick={() => {toggleMenu(!isActive)}} active={isActive}/>
+        <StyledNav className="main-nav" onClick={() => {toggleMenu(!isActive)}}>
+            <MenuButton  active={isActive}/>
 
             <StyledList active={isActive}>
                 <li className="menu-item">
-                    <StyledLink href="#sobre">Mais que uma escola</StyledLink>
+                    <Link to="sobre" smooth  onClick={() => {toggleMenu(!isActive)}}>
+                        <StyledLink>Mais que uma escola</StyledLink>
+                    </Link>
                 </li>
                 <li className="menu-item">
-                    <StyledLink href="#galeria">Galeria</StyledLink>
+                    <Link to="galeria" smooth  onClick={() => {toggleMenu(!isActive)}}>
+                        <StyledLink>Galeria</StyledLink>
+                    </Link>
                 </li>
                 <li className="menu-item">
-                    <StyledLink href="#senai">O Senai</StyledLink>
+                    <Link to="senai" smooth  onClick={() => {toggleMenu(!isActive)}}>
+                        <StyledLink>O Senai</StyledLink>
+                    </Link>
                 </li>
             </StyledList>
         </StyledNav>
