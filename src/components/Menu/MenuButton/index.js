@@ -8,10 +8,12 @@ const MenuButton = styled.button`
     }
 
     position: absolute;
-    top: 78px;
+    
+
+    top: 35px;
     left: 5vw;
-    height: 36px;
-    width: 36px;
+    height: 25px;
+    width: 25px;
 
     background-color: unset;
     border: unset;
@@ -25,6 +27,26 @@ const MenuButton = styled.button`
     transform: scaleX(-1);
     transition: .4s;
 
+
+    @media(min-width: 801px){
+        top: 78px;
+        left: 5vw;
+        height: 36px;
+        width: 36px;
+
+        &::before{
+            content: ">";
+            font-size: 36px;
+            color: #FF0075;
+            position: absolute;
+            top: -25%;
+            right: -75%;
+            display: ${props => props.active ? null : "none"};
+            font-family: "Poppins", sans-serif;
+            font-weight: bolder;
+        }   
+    }
+
     &:hover{
         cursor: pointer;
         transform: scaleX(-1) scale(0.8);
@@ -35,7 +57,7 @@ const MenuButton = styled.button`
         font-size: 36px;
         color: #FF0075;
         position: absolute;
-        top: -25%;
+        top: -50%;
         right: -75%;
         display: ${props => props.active ? null : "none"};
         font-family: "Poppins", sans-serif;
