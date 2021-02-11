@@ -5,6 +5,7 @@ import { IntroContainer, AboutContainer } from "../components/Container/";
 import Banner from "../components/Banner";
 import Nav from "../components/Menu/Nav";
 import ButtonLink from "../components/Button";
+import Footer from "../components/Footer";
 
 import { TextWrapper, SolidTextWrapper } from "../components/TextWrapper";
 import {
@@ -41,6 +42,11 @@ export default function Home() {
           <ButtonLink href="https://informatica.sp.senai.br/" target="_blank">Veja mais</ButtonLink>
         </SolidTextWrapper>
       </AboutContainer>
+
+      <Footer>
+        <Footer.Title>Escola Senai de Informática</Footer.Title>
+        <Footer.Copyright>Copyright 2021 © Todos os direitos reservados.</Footer.Copyright>
+      </Footer>
 
     </div>
   )
