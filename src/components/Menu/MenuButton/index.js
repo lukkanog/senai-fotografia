@@ -27,6 +27,23 @@ const MenuButton = styled.button`
     transform: scaleX(-1);
     transition: .4s;
 
+    &:hover{
+        cursor: pointer;
+        transform: scaleX(-1) scale(0.8);
+    }
+
+    &::before{
+        content: ">";
+        font-size: 36px;
+        color: #FF0075;
+        position: absolute;
+        top: -50%;
+        right: -75%;
+        display: ${props => props.active ? null : "none"};
+        font-family: "Poppins", sans-serif;
+        font-weight: bolder;
+    }
+
 
     @media(min-width: 801px){
         top: 78px;
@@ -47,22 +64,7 @@ const MenuButton = styled.button`
         }   
     }
 
-    &:hover{
-        cursor: pointer;
-        transform: scaleX(-1) scale(0.8);
-    }
-
-    &::before{
-        content: ">";
-        font-size: 36px;
-        color: #FF0075;
-        position: absolute;
-        top: -50%;
-        right: -75%;
-        display: ${props => props.active ? null : "none"};
-        font-family: "Poppins", sans-serif;
-        font-weight: bolder;
-    }
+    
 
 `;
 
