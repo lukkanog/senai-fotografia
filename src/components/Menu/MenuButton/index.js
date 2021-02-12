@@ -9,8 +9,6 @@ const MenuIcon = styled.button`
     }
 
     position: absolute;
-    
-
     top: 35px;
     left: 5vw;
     height: 25px;
@@ -20,12 +18,12 @@ const MenuIcon = styled.button`
     border: unset;
     outline: unset;
 
-    z-index: 900;
 
     background-image: url(${Icon});
     background-size: cover;
 
     transform: scaleX(-1);
+    opacity: ${props => props.scroll ? "100%" : "0%"};
     transition: .4s;
 
     &:hover{
@@ -51,6 +49,8 @@ const MenuIcon = styled.button`
         left: ${props => props.scroll && !props.active ? "1vw" : "5vw"};
         height: 36px;
         width: 36px;
+        opacity: 100%;
+
 
         &::before{
             content: ">";
