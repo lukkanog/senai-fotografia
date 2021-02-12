@@ -22,8 +22,10 @@ export const BlackTitle = styled(Title)`
 
 export const GalleryTitle = styled(Title)`
     font-family: "Bungee Shade", sans-serif;
-    letter-spacing: 10px;
+    letter-spacing: 15px;
+    text-align: center;
     color: #111;
+    margin: 1em;
 `;
 
 

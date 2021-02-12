@@ -23,3 +23,12 @@ export function AboutContainer(props) {
 
     )
 }
+
+export function GalleryContainer(props) {
+    return (
+        <Section>
+            {props.children}
+        </Section>
+
+    )
+}

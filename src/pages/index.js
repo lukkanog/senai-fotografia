@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 import Head from "next/head";
 
-import { IntroContainer, AboutContainer } from "../components/Container/";
+import { IntroContainer, AboutContainer, GalleryContainer } from "../components/Container/";
 import Banner from "../components/Banner";
 import Nav from "../components/Menu/Nav";
 import ButtonLink from "../components/Button";
 import Footer from "../components/Footer";
+import Gallery from "../components/Gallery";
 
 import { TextWrapper, SolidTextWrapper } from "../components/TextWrapper";
 import {
@@ -25,8 +26,10 @@ export default function Home() {
         <link rel="icon" href="./favicon.ico" type="image/x-icon" />
       </Head>
 
-      <Nav />
-      <Banner />
+      <header className="main-header">
+        <Nav />
+        <Banner />
+      </header>
 
       <IntroContainer id="sobre">
         <TextWrapper>
@@ -35,7 +38,12 @@ export default function Home() {
         </TextWrapper>
       </IntroContainer>
 
-      <AboutContainer id="senai">
+      <GalleryContainer id="gallery">
+        <GalleryTitle>Galeria</GalleryTitle>
+        <Gallery></Gallery>
+      </GalleryContainer>
+
+      <AboutContainer id="senai"> 
         <SolidTextWrapper>
           <BlackTitle>O senai</ BlackTitle>
           <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo dapibus est at porttitor. Mauris suscipit convallis elit. Donec tristique convallis arcu sit amet viverra. Nam sit amet massa nunc. Nunc eget ipsum orci. Proin varius interdum ligula, ac blandit dolor accumsan sed. Vestibulum et gravida ante, vitae dignissim turpis.</Paragraph>
