@@ -6,13 +6,9 @@ import Image from 'next/image';
 import mobileBackgroundImg from "../../assets/img/mobile-banner.jpg";
 
 
-
-
 const GalleryGrid = styled.div`
     width: 90%;
     max-width: 1400px;
-
-
 `;
 
 GalleryGrid.Row = styled.div`
@@ -41,9 +37,13 @@ const ImageContainer = styled.div`
     width: 100%;
     height: ${props => props.type === "vertical" ? "728px" : "394px"};
     margin: 1em 0;
+    transition: .4s;
+    background-color: #C4C4C4;
+
 
     &:hover{
         cursor: pointer;
+        transform: scale(0.97);
     }
 
     @media(max-width: 800px){
@@ -53,14 +53,6 @@ const ImageContainer = styled.div`
 
     }
 `;
-
-const Photo = (img) => {
-    return (
-        <ImageContainer type={img.type} onClick={() => setLightbox(img.src)}>
-            <Image objectFit="cover" src={img.src} alt={img.alt} layout="fill" quality={100} />
-        </ImageContainer>
-    )
-}
 
 
 function Gallery() {
@@ -86,8 +78,8 @@ function Gallery() {
             <GalleryGrid.Row>
 
                 <GalleryGrid.Column>
-                    <Photo alt="" src={Banner} onClick={() => console.log("aaaaaaaaaa")}/>
-                    <Photo alt="" src={Banner} onClick={() => console.log("aaaaaaaaaa")}/>
+                    <Photo alt="" src={Banner}/>
+                    <Photo alt="" src={Banner}/>
                 </GalleryGrid.Column>
 
                 <GalleryGrid.Column>
@@ -123,7 +115,7 @@ function Gallery() {
             </GalleryGrid.Row>
 
             <GalleryGrid.Row>
-                <Photo alt="" src={Banner} onClick={console.log("aaaaaaaaaa")}/>
+                <Photo alt="" src={Banner}/>
             </GalleryGrid.Row>
 
 
