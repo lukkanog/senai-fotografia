@@ -5,24 +5,24 @@ import Image from 'next/image';
 import ImageContainer from "./Image";
 import GalleryGrid from "./styles";
 
-import img01 from "../../assets/img/gallery/img01.jpg";
-import img02 from "../../assets/img/gallery/img02.jpg";
-import img03 from "../../assets/img/gallery/img03.jpg";
-import img04 from "../../assets/img/gallery/img04.jpg";
-import img05 from "../../assets/img/gallery/img05.jpg";
-import img06 from "../../assets/img/gallery/img06.jpg";
-import img07 from "../../assets/img/gallery/img07.jpg";
-import img08 from "../../assets/img/gallery/img08.jpg";
-import img09 from "../../assets/img/gallery/img09.jpg";
-import img10 from "../../assets/img/gallery/img10.jpg";
-import img11 from "../../assets/img/gallery/img11.jpg";
-import img12 from "../../assets/img/gallery/img12.jpg";
-import img13 from "../../assets/img/gallery/img13.jpg";
-import img14 from "../../assets/img/gallery/img14.jpg";
-import img15 from "../../assets/img/gallery/img15.jpg";
-import img16 from "../../assets/img/gallery/img16.jpg";
-import img17 from "../../assets/img/gallery/img17.jpg";
-import img18 from "../../assets/img/gallery/img18.jpg";
+import img01 from "../../assets/img/gallery/img01.JPG";
+import img02 from "../../assets/img/gallery/img02.JPG";
+import img03 from "../../assets/img/gallery/img03.JPG";
+import img04 from "../../assets/img/gallery/img04.JPG";
+import img05 from "../../assets/img/gallery/img05.JPG";
+import img06 from "../../assets/img/gallery/img06.JPG";
+import img07 from "../../assets/img/gallery/img07.JPG";
+import img08 from "../../assets/img/gallery/img08.JPG";
+import img09 from "../../assets/img/gallery/img09.JPG";
+import img10 from "../../assets/img/gallery/img10.JPG";
+import img11 from "../../assets/img/gallery/img11.JPG";
+import img12 from "../../assets/img/gallery/img12.JPG";
+import img13 from "../../assets/img/gallery/img13.JPG";
+import img14 from "../../assets/img/gallery/img14.JPG";
+import img15 from "../../assets/img/gallery/img15.JPG";
+import img16 from "../../assets/img/gallery/img16.JPG";
+import img17 from "../../assets/img/gallery/img17.JPG";
+import img18 from "../../assets/img/gallery/img18.JPG";
 
 
 
