@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import { Lightbox } from "react-modal-image";
-import ImageContainer from "./Image";
 import Image from 'next/image';
+
+import ImageContainer from "./Image";
 import GalleryGrid from "./styles";
 
 import img01 from "../../assets/img/gallery/img01.jpg";
 import img02 from "../../assets/img/gallery/img02.jpg";
 import img03 from "../../assets/img/gallery/img03.jpg";
 import img04 from "../../assets/img/gallery/img04.jpg";
+import img05 from "../../assets/img/gallery/img05.jpg";
 import img06 from "../../assets/img/gallery/img06.jpg";
 import img07 from "../../assets/img/gallery/img07.jpg";
 import img08 from "../../assets/img/gallery/img08.jpg";
@@ -101,6 +103,7 @@ function Gallery() {
 
                 <GalleryGrid.Column>
                     <Photo alt="" src={img18} />
+                    <Photo alt="" src={img05} />
                 </GalleryGrid.Column>
             </GalleryGrid.Row>
 
