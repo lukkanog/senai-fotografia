@@ -10,7 +10,7 @@ import img02 from "../../assets/img/gallery/img02.JPG";
 import img03 from "../../assets/img/gallery/img03.JPG";
 import img04 from "../../assets/img/gallery/img04.JPG";
 import img05 from "../../assets/img/gallery/img05.JPG";
-import img06 from "../../assets/img/gallery/img06.JPG";
+// import img06 from "../../assets/img/gallery/img06.JPG";
 import img07 from "../../assets/img/gallery/img07.jpg";
 import img08 from "../../assets/img/gallery/img08.JPG";
 import img09 from "../../assets/img/gallery/img09.JPG";
@@ -63,7 +63,7 @@ function Gallery() {
 
             <GalleryGrid.Row>
                 <GalleryGrid.Column>
-                    <Photo alt="" src={img06} />
+                    <Photo alt="" src={img07} />
                 </GalleryGrid.Column>
 
                 <GalleryGrid.Column>
