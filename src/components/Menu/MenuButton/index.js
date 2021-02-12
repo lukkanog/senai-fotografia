@@ -83,8 +83,6 @@ function MenuButton(props) {
         });
     },[])
     
-    
-    
 
     return <MenuIcon scroll={changeOnScroll} active={props.active} />
 

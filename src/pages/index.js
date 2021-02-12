@@ -4,6 +4,7 @@ import Head from "next/head";
 import { IntroContainer, AboutContainer, GalleryContainer } from "../components/Container/";
 import Banner from "../components/Banner";
 import Nav from "../components/Menu/Nav";
+import ScrollBackButton from "../components/ScrollBackButton";
 import ButtonLink from "../components/Button";
 import Footer from "../components/Footer";
 import Gallery from "../components/Gallery";
@@ -26,10 +27,13 @@ export default function Home() {
         <link rel="icon" href="./favicon.ico" type="image/x-icon" />
       </Head>
 
+
       <header className="main-header">
         <Nav />
         <Banner />
       </header>
+
+      <ScrollBackButton />
 
       <IntroContainer id="sobre">
         <TextWrapper>
