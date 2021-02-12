@@ -5,24 +5,24 @@ import Image from 'next/image';
 import ImageContainer from "./Image";
 import GalleryGrid from "./styles";
 
-import Img01 from "../../assets/img/img01.jpg";
-import Img02 from "../../assets/img/img02.jpg";
-import Img03 from "../../assets/img/img03.jpg";
-import Img04 from "../../assets/img/img04.jpg";
-import Img05 from "../../assets/img/img05.jpg";
-import Img06 from "../../assets/img/img06.jpg";
-import Img07 from "../../assets/img/img07.jpg";
-import Img08 from "../../assets/img/img08.jpg";
-import Img09 from "../../assets/img/img09.jpg";
-import Img10 from "../../assets/img/img10.jpg";
-import Img11 from "../../assets/img/img11.jpg";
-import Img12 from "../../assets/img/img12.jpg";
-import Img13 from "../../assets/img/img13.jpg";
-import Img14 from "../../assets/img/img14.jpg";
-import Img15 from "../../assets/img/img15.jpg";
-import Img16 from "../../assets/img/img16.jpg";
-import Img17 from "../../assets/img/img17.jpg";
-import Img18 from "../../assets/img/img18.jpg";
+import Img01 from "../../assets/img/gallery/img01.jpg";
+import Img02 from "../../assets/img/gallery/img02.jpg";
+import Img03 from "../../assets/img/gallery/img03.jpg";
+import Img04 from "../../assets/img/gallery/img04.jpg";
+import Img05 from "../../assets/img/gallery/img05.jpg";
+import Img06 from "../../assets/img/gallery/img06.jpg";
+import Img07 from "../../assets/img/gallery/img07.jpg";
+import Img08 from "../../assets/img/gallery/img08.jpg";
+import Img09 from "../../assets/img/gallery/img09.jpg";
+import Img10 from "../../assets/img/gallery/img10.jpg";
+import Img11 from "../../assets/img/gallery/img11.jpg";
+import Img12 from "../../assets/img/gallery/img12.jpg";
+import Img13 from "../../assets/img/gallery/img13.jpg";
+import Img14 from "../../assets/img/gallery/img14.jpg";
+import Img15 from "../../assets/img/gallery/img15.jpg";
+import Img16 from "../../assets/img/gallery/img16.jpg";
+import Img17 from "../../assets/img/gallery/img17.jpg";
+import Img18 from "../../assets/img/gallery/img18.jpg";
 
 
 
