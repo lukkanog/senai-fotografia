@@ -12,6 +12,7 @@
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-is": "^16.8.0",
+    "react-modal-image": "^2.5.0",
     "react-scroll": "^1.8.1",
     "styled-components": "^5.0.0"
   },
