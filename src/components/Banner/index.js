@@ -13,7 +13,7 @@ const Banner = styled.div`
     top: 0; */
 
     @media(min-width: 801px){
-        min-height: 120vh;
+        min-height: 937.79px;
         background-image: url(${backgroundImg});
         background-position: top right;
     }

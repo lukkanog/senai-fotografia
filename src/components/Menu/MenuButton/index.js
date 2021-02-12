@@ -1,7 +1,8 @@
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Icon from "../../../assets/icons/menu-icon.svg";
 
-const MenuButton = styled.button`
+const MenuIcon = styled.button`
 
     @media(max-width: 800px){
         display: hidden;
@@ -46,8 +47,8 @@ const MenuButton = styled.button`
 
 
     @media(min-width: 801px){
-        top: 78px;
-        left: 5vw;
+        top: ${props => props.scroll && !props.active ? "2.5vh" : "78px"};
+        left: ${props => props.scroll && !props.active ? "1vw" : "5vw"};
         height: 36px;
         width: 36px;
 
@@ -67,6 +68,27 @@ const MenuButton = styled.button`
     
 
 `;
+
+function MenuButton(props) {
+
+    const [changeOnScroll, setChangeOnScroll] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 100) {
+                setChangeOnScroll(true);
+            } else {
+                setChangeOnScroll(false);
+            }
+        });
+    },[])
+    
+    
+    
+
+    return <MenuIcon scroll={changeOnScroll} active={props.active} />
+
+}
 
 
 

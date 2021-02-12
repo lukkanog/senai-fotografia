@@ -26,7 +26,7 @@ export function AboutContainer(props) {
 
 export function GalleryContainer(props) {
     return (
-        <Section>
+        <Section  id={props.id}>
             {props.children}
         </Section>
 

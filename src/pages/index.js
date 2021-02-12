@@ -38,7 +38,7 @@ export default function Home() {
         </TextWrapper>
       </IntroContainer>
 
-      <GalleryContainer id="gallery">
+      <GalleryContainer id="galeria">
         <GalleryTitle>Galeria</GalleryTitle>
         <Gallery></Gallery>
       </GalleryContainer>

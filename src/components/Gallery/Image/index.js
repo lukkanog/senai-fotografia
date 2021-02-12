@@ -1,25 +1,26 @@
-// import styled from "styled-components";
-// import Image from 'next/image';
+import styled from "styled-components";
+import Image from 'next/image';
+
+const ImageContainer = styled.div`
+    position: relative;
+    width: 100%;
+    height: ${props => props.type === "vertical" ? "728px" : "394px"};
+    margin: 1em 0;
+    transition: .4s;
+    background-color: #C4C4C4;
 
 
-// const Photo = styled.div`
-//    width: 47.5%;
-//    height: 100px;
-//    /* position: relative;
-//    object-fit: cover;
-//    align-self: center; */
-// `;
+    &:hover{
+        cursor: pointer;
+        transform: scale(0.97);
+    }
 
+    @media(max-width: 800px){
+        width: 100%;
+        height: ${props => props.type === "vertical" ? "488px" : "215px"};
+        margin: 5px 0;
 
+    }
+`;
 
-
-// export default function GalleryImage(img) {
-//     return (
-//         <Photo>
-//             <Image
-//                 layout="fill"
-//                 alt={img.alt}
-//                 src={img.src} />
-//         </Photo>
-//     )
-// }
+export default ImageContainer;
