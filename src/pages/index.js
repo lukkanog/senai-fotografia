@@ -38,7 +38,7 @@ export default function Home() {
       <IntroContainer id="sobre">
         <TextWrapper>
           <BlueTitle>Mais que uma escola</BlueTitle>
-          <BoldParagraph>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</BoldParagraph>
+          <BoldParagraph>Um novo lugar, uma nova perspectiva, no Senai trocamos experiências, sonhos e inspirações. Veja, nesse ensaio fotográfico, o diferencial que construímos ao longo desses 18 anos.</BoldParagraph>
         </TextWrapper>
       </IntroContainer>
 
@@ -50,7 +50,7 @@ export default function Home() {
       <AboutContainer id="senai"> 
         <SolidTextWrapper>
           <BlackTitle>O senai</ BlackTitle>
-          <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo dapibus est at porttitor. Mauris suscipit convallis elit. Donec tristique convallis arcu sit amet viverra. Nam sit amet massa nunc. Nunc eget ipsum orci. Proin varius interdum ligula, ac blandit dolor accumsan sed. Vestibulum et gravida ante, vitae dignissim turpis.</Paragraph>
+          <Paragraph>Com foco na tecnologia, o Senai de Informática à 18 anos vem preparando profissionais qualificados para o mercado de trabalho, além da excelência no ensino prezamos pela empatia, bom relacionamento e parceria entre todos dentro da instituição.</Paragraph>
           <ButtonLink href="https://informatica.sp.senai.br/" target="_blank">Veja mais</ButtonLink>
         </SolidTextWrapper>
       </AboutContainer>
