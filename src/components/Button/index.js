@@ -5,7 +5,7 @@ const ButtonLink = styled.a`
     color: #fff;
     background-color: #000;
     width: unset;
-    padding: 0 1em;
+    padding: .5em 1em;
     margin-top: 1em;
     text-align: center;
     align-self: center;
